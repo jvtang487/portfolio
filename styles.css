@@ -107,6 +107,7 @@ nav .right a span{
 .hero-section .headshot img{
     border-radius:  50%;
     width: 350px;
+    height: ;
 }
 
 /* SECTION 2: Skills */
@@ -154,6 +155,36 @@ nav .right a span{
 
 .skills-section .cells .cell span{
     font-size: 18px;
+}
+
+/* SECTION 3: Projects */
+.projects-section{
+    padding: 0 50px;
+    margin-bottom: 100px;
+}
+
+.projects-section h2{
+    font-size: 35px;
+    text-align: center;
+}
+.projects-section .projects {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+
+.projects-section .projects .project-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    padding: 10px 20px;
+    margin: 10px;
+    border: 1.5px solid #d3d3d3;
+    border-radius: 5px;
 }
 
 /* SECTION 4: Contact */
