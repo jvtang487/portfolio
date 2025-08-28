@@ -107,7 +107,6 @@ nav .right a span{
 .hero-section .headshot img{
     border-radius:  50%;
     width: 350px;
-    height: ;
 }
 
 /* SECTION 2: Skills */
@@ -175,16 +174,64 @@ nav .right a span{
 }
 
 
-.projects-section .projects .project-card{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
+.project-card{
 
     padding: 10px 20px;
     margin: 10px;
     border: 1.5px solid #d3d3d3;
     border-radius: 5px;
+    overflow: hidden;
+    max-width: 400px;
+    text-align: left;
+    transition: transform 0.3s ease-in-out;
+}
+
+.project-card:hover{
+    transform: translateY(-5px);
+    cursor: pointer;
+}
+
+.project-image img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.project-details{
+    padding: 20px;
+}
+
+.project-details h3{
+    margin-top: 0;
+    font-size: 20px;
+}
+
+.project-description{
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.language-tag {
+  display: inline-block;
+  background-color: #e0e0e0;
+  color: #555;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 0.9em;
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+
+.project-link {
+  display: inline-block;
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 10px;
+  transition: background-color 0.3s;
 }
 
 /* SECTION 4: Contact */
