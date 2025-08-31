@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <link rel="stylesheet" href="styles.css">
+
+    <script src="script.js"></script>
     
     <title>Portfolio</title>
 </head>
@@ -94,6 +96,11 @@
                     <span>Python</span>
                 </div>
 
+                <div class="cell">
+                    <img src="/images/javascript-logo.webp" alt="JavaScript logo">
+                    <span>JavaScript</span>
+                </div>
+
 
             </div>
         </section>
@@ -102,37 +109,100 @@
         <section id="projects" class="projects-section">
             <h2>Projects</h2>
             <div class="projects">
-                <div class="project-card">
-                    <div class="project-image">
+                <div class="project-card" 
+                    data-project-id="1"
+                    data-title="Developer Journal"
+                    data-description="A full-stack journaling application designed to help users organize and track multiple projects. Users can register with a User ID and PIN, create projects with tags, and visualize their skills through a radar chart that grows as more projects are added. Each project page supports note entries, milestones, and task lists, with completed items displayed on a timeline to highlight progress. This project combines user authentication, data organization, and interactive visualizations to create a personal developer hub."
+                    data-image="images/devsurf.webp"
+                    data-link="https://github.com/cse110-sp24-group29/cse110-sp24-group29/tree/main">
+                
+                    <div class="project-media">
                         <img src="images/devsurf.webp" alt="Project 1 Demo">
                     </div>
                     <div class="project-details">
                         <h3>Developer Journal</h3>
-                        <p>A full-stack journaling application that lets users securely register and manage multiple projects with project tags, notes, milestones, and tasks. It features a personalized skill radar chart that updates as new projects are added, and a dynamic project timeline that visualizes completed milestones and tasks to track progress over time.</p>
                         <div class="project-languages">
-                            <span class="language-tag">HTML</span>
-                            <span class="language-tag">CSS</span>
-                            <span class="language-tag">JS</span>
+                        <span class="language-tag">HTML</span>
+                        <span class="language-tag">CSS</span>
+                        <span class="language-tag">JavaScript</span>
                         </div>
-                        <a href="https://github.com/cse110-sp24-group29/cse110-sp24-group29" class="project-link" target="_blank">Link</a>
                     </div>
                 </div>
 
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="" alt="Project 2 Demo">
+                <div class="project-card" 
+                    data-project-id="2"
+                    data-title="2048 Solver"
+                    data-description="Built an AI agent to play the 2048 game using a depth-3 expectimax search algorithm. The player is modeled as a max node while random tile spawns are treated as chance nodes, and leaf nodes are evaluated using the game engine’s score. The AI consistently reaches 512 tiles and scores above 5,000, showcasing the effectiveness of expectimax in stochastic environments. This project highlights algorithm implementation, search trees, and game AI strategy."
+                    data-image="images/2048-image.webp"
+                    data-video="videos/2048-demo.mp4"
+                    data-link="">
+                
+                    <div class="project-media">
+                        <img src="images/2048-image.webp" alt="Project 2 Demo">
                     </div>
                     <div class="project-details">
-                        <h3>Project 2</h3>
-                        <p>Description to be added</p>
+                        <h3>2048 Solver</h3>
                         <div class="project-languages">
-                            <span class="language-tag"></span>
-                            <span class="language-tag"></span>
-                            <span class="language-tag"></span>
+                        <span class="language-tag">Python</span>
                         </div>
-                        <a href="" class="project-link">Link</a>
                     </div>
                 </div>
+
+                <div class="project-card" 
+                    data-project-id="3"
+                    data-title="Tennis Serve Analysis"
+                    data-description="In a team of five, we developed a machine learning model that predicts a tennis player’s match and career success based on serve performance. We scraped and cleaned match data for five professional players from Tennis Abstract, then trained predictive models using scikit-learn. Visualizations created with Matplotlib revealed performance trends and model accuracy. This project demonstrates teamwork, data preprocessing, and applying machine learning to real-world sports analytics."
+                    data-image="images/tennis-data.webp"
+                    data-video=""
+                    data-link="https://github.com/COGS108/Group053_SP25/blob/master/FinalProject_Group053_SP25.ipynb">
+                
+                    <div class="project-media">
+                        <img src="images/tennis-data.webp" alt="Project 3 Demo">
+                    </div>
+                    <div class="project-details">
+                        <h3>Tennis Serve Analysis</h3>
+                        <div class="project-languages">
+                        <span class="language-tag">Python</span>
+                        <span class="language-tag">Scikit-learn</span>
+                        <span class="language-tag">Matplotlib</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" 
+                    data-project-id="4"
+                    data-title="Blackjack Simulator"
+                    data-description="Implemented reinforcement learning algorithms to evaluate and improve Blackjack play. Using a fixed baseline policy (“Hit if below 14, Stand otherwise”), I applied Monte Carlo and Temporal-Difference methods for state-value estimation, and extended to Q-learning with an epsilon-greedy strategy to learn a control policy. Trained with a discount factor of 0.95 and terminal rewards of +1/–1, the Q-learning agent achieved about 40–45% accuracy, outperforming the baseline strategy. This project demonstrates reinforcement learning fundamentals and applying AI techniques to classic games."
+                    data-image="images/blackjack.webp"
+                    data-video="videos/blackjack-demo.mp4"
+                    data-link="">
+                
+                    <div class="project-media">
+                        <img src="images/blackjack.webp" alt="Project 4 Demo">
+                    </div>
+                    <div class="project-details">
+                        <h3>Blackjack Simulator</h3>
+                        <div class="project-languages">
+                        <span class="language-tag">Python</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="project-modal" class="modal">
+                    <div class="modal-content">
+                        <div class="modal-media-container">
+                            </div>
+                            <span class="close-button">Close</span>
+                        <div class="modal-details">
+                            <h3 class="modal-title"></h3>
+                            <p class="modal-description"></p>
+                            <div class="modal-tags"></div>
+                            <a href="#" target="_blank" class="modal-link">View Project</a>
+                            <a href="https://www.youtube.com/watch?v=qkq2yoXhSyg&t=4s" target="_blank" class="modal-link">Project Video</a>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </section>
 
@@ -141,7 +211,9 @@
             <h2>Contact</h2>
             <div class="group">
                 <div class="text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit iusto laborum aliquid consequatur voluptas neque cum qui repudiandae soluta? Inventore vel a nihil commodi, quasi, facilis numquam, cupiditate quam totam aperiam placeat sed officia vitae voluptatibus adipisci magni fugiat. Deleniti possimus voluptates sequi blanditiis nisi architecto, excepturi laborum numquam dolore!
+                   Email: jtang487@gmail.com <br>
+                   jvtang487@ucsd.edu <br>
+                   Phone: (619) 817-9513
                 </div>
 
                 <form>

@@ -191,9 +191,9 @@ nav .right a span{
     cursor: pointer;
 }
 
-.project-image img{
+.project-media img{
     width: 100%;
-    height: auto;
+    height: 300px;
     display: block;
 }
 
@@ -232,6 +232,48 @@ nav .right a span{
   font-weight: bold;
   margin-top: 10px;
   transition: background-color 0.3s;
+}
+
+.close-button {
+  top: 15px;
+  right: 25px;
+  color: #eb0505;
+  font-size: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.2s ease-in-out;
+}
+
+.close-button:hover,
+.close-button:focus {
+  color: #333;
+  text-decoration: none;
+}
+
+.modal-media-container {
+    flex: 1;
+    min-width: 40%;
+}
+
+.modal-media-container img,
+.modal-media-container video {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.modal-details {
+    flex: 1;
+}
+
+.modal-title {
+  margin-top: 0;
+  font-size: 2em;
+}
+
+.modal-description {
+  line-height: 1.6;
+  color: #555;
 }
 
 /* SECTION 4: Contact */
@@ -346,6 +388,12 @@ nav .right a span{
     .skills-section .cells .cell span{
         font-size: 16px;
     }
+
+    /* SECTION 3: Projects */
+    .modal-content {
+        flex-direction: column;
+        max-width: 90%;
+    } 
 
     /* SECTION 4: Contact */
     .contact-section {
