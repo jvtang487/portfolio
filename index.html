@@ -82,22 +82,22 @@
 
             <div class="cells">
                 <div class="cell">
-                    <img src="/images/html-logo.webp" alt="html logo">
+                    <img src="images/html-logo.webp" alt="html logo">
                     <span>HTML</span>
                 </div>
 
                 <div class="cell">
-                    <img src="/images/css-logo.webp" alt="css logo">
+                    <img src="images/css-logo.webp" alt="css logo">
                     <span>CSS</span>
                 </div>
 
                 <div class="cell">
-                    <img src="/images/python-logo.webp" alt="python logo">
+                    <img src="images/python-logo.webp" alt="python logo">
                     <span>Python</span>
                 </div>
 
                 <div class="cell">
-                    <img src="/images/javascript-logo.webp" alt="JavaScript logo">
+                    <img src="images/javascript-logo.webp" alt="JavaScript logo">
                     <span>JavaScript</span>
                 </div>
 
@@ -171,7 +171,7 @@
 
                 <div class="project-card" 
                     data-project-id="4"
-                    data-title="Blackjack Simulator"
+                    data-title="AI Blackjack Player"
                     data-description="Implemented reinforcement learning algorithms to evaluate and improve Blackjack play. Using a fixed baseline policy (“Hit if below 14, Stand otherwise”), I applied Monte Carlo and Temporal-Difference methods for state-value estimation, and extended to Q-learning with an epsilon-greedy strategy to learn a control policy. Trained with a discount factor of 0.95 and terminal rewards of +1/–1, the Q-learning agent achieved about 40–45% accuracy, outperforming the baseline strategy. This project demonstrates reinforcement learning fundamentals and applying AI techniques to classic games."
                     data-image="images/blackjack.webp"
                     data-video="videos/blackjack-demo.mp4"
@@ -181,7 +181,45 @@
                         <img src="images/blackjack.webp" alt="Project 4 Demo">
                     </div>
                     <div class="project-details">
-                        <h3>Blackjack Simulator</h3>
+                        <h3>AI Blackjack Player</h3>
+                        <div class="project-languages">
+                        <span class="language-tag">Python</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" 
+                    data-project-id="5"
+                    data-title="AI Gomoku Player"
+                    data-description="Implemented MCTS to enable an AI agent to play Gomoku strategically. The algorithm simulates thousands of rollouts within a computation budget to evaluate moves, outputting both the best action and winning-rate estimates for all candidate moves. To improve efficiency, I constrained exploration to an “active” area around existing pieces. With higher simulation budgets (e.g., 6000), the AI demonstrates increasingly strong play, making competitive and adaptive decisions."
+                    data-image="images/gomoku-image.webp"
+                    data-video="videos/gomoku-demo.mp4"
+                    data-link="">
+                
+                    <div class="project-media">
+                        <img src="images/gomoku-image.webp" alt="Project 5 Demo">
+                    </div>
+                    <div class="project-details">
+                        <h3>AI Gomoku Player</h3>
+                        <div class="project-languages">
+                        <span class="language-tag">Python</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" 
+                    data-project-id="6"
+                    data-title="Pathfinding Visualizer"
+                    data-description="Implemented and compared classic search algorithms to find paths from a start node to a goal node in a grid world. The environment includes different terrains such as grass (high cost) and puddles (impassable), requiring the agent to account for both obstacles and path efficiency. I debugged the provided DFS implementation and added BFS, Uniform Cost Search, and A* with Manhattan Distance, allowing the program to visualize how each strategy explores the grid and finds solutions."
+                    data-image="images/path-image.webp"
+                    data-video="videos/path-demo.mp4"
+                    data-link="">
+                
+                    <div class="project-media">
+                        <img src="images/path-image.webp" alt="Project 6 Demo">
+                    </div>
+                    <div class="project-details">
+                        <h3>Pathfinding Visualizer</h3>
                         <div class="project-languages">
                         <span class="language-tag">Python</span>
                         </div>
@@ -198,7 +236,6 @@
                             <p class="modal-description"></p>
                             <div class="modal-tags"></div>
                             <a href="#" target="_blank" class="modal-link">View Project</a>
-                            <a href="https://www.youtube.com/watch?v=qkq2yoXhSyg&t=4s" target="_blank" class="modal-link">Project Video</a>
                         </div>
                     </div>
                 </div>
